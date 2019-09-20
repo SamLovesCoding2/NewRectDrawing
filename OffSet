@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rectorder;
+
+/**
+ *
+ * @author lupeiyu
+ */
+public class OffSet
+{
+    public Windows window;
+    public int offSetX;
+    public int offSetY;
+
+    public OffSet(Windows window, int offSetX, int offSetY)
+    {
+        this.window = window;
+        this.offSetX = offSetX;
+        this.offSetY = offSetY;
+    }
+    
+}
