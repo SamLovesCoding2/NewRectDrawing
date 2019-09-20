@@ -1,0 +1,74 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rectorder;
+
+/**
+ *
+ * @author lupeiyu
+ */
+import java.awt.Color;
+import java.awt.Graphics;
+public class Windows
+{
+    private int x = 0;
+    private int y = 0;
+    private int width = 0;
+    private int height = 0;
+    private Color c;
+    
+    
+    
+    public Windows(int x,int y,int width, int height, Color color)
+    {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.c = color;
+   
+    }
+    public void drawRect(Graphics g)
+    {
+      // g.drawRect(x, y, width, height);
+        g.setColor(c);
+        g.fillRect(x, y, width, height);
+        System.out.println("Color: " + this.c + "x: " + this.x + "y: " + this.y + "width: " + this.width + "height: " + this.height);
+
+    }
+
+    public int getX()
+    {
+        return x;
+    }
+    public void setX(int x)
+    {
+        this.x = x ;
+    }
+
+    public int getY()
+    {
+        return y;
+    }
+    public void setY(int y)
+    {
+        this.y = y ;
+    }
+    public int getWidth()
+    {
+        return width;
+    }
+
+    public int getHeight()
+    {
+        return height;
+    }
+
+    public Color getC()
+    {
+        return c;
+    }
+ 
+}
